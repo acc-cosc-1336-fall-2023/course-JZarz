@@ -1,6 +1,6 @@
 import unittest
 
-from src.examples.c_decisions.decisions import get_not_value, get_or_truth, is_consonant, is_even, is_odd, is_vowel, test_config
+from src.examples.c_decisions.decisions import get_not_value, get_or_truth, is_consonant, is_even, is_odd, is_vowel, overtime, test_config
 from src.examples.c_decisions.decisions import get_and_result
 
 class Test_Config(unittest.TestCase):
@@ -38,3 +38,7 @@ class Test_Config(unittest.TestCase):
     def test_if_cons(self):
         self.assertEqual(False,is_consonant('a'))
         self.assertEqual(True,is_consonant('j'))
+
+    def test_if_overtime(self):
+        self.assertEqual(False, overtime(30))
+        self.assertEqual(True, overtime(50))
