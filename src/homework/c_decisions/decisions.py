@@ -1,8 +1,11 @@
 def get_options_ratio(option, total):
-    ratio = option % total
+    
+    ratio = option / total
     
     return ratio
+
     #get_faculty_rating(ratio)
+
 
 def get_faculty_rating(ratio):
     rating = ""
@@ -19,4 +22,5 @@ def get_faculty_rating(ratio):
         rating = "Unacceptable"
     else:
         print("Invalid")
-    
+
+    return rating    

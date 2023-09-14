@@ -3,8 +3,8 @@ import decisions
 option = int(input("Input Option: "))
 total = int(input("Input Total: "))
 
-result = decisions.get_options_ratio(option,total)
+returned_ratio = decisions.get_options_ratio(option, total)
 
-rating = decisions.get_faculty_rating(result)
+score = decisions.get_faculty_rating(returned_ratio)
 
-print(rating)
+print(f"Your Rating:", score)
