@@ -2,6 +2,7 @@ import unittest
 
 from src.examples.c_decisions.decisions import get_not_value, get_or_truth, is_consonant, is_even, is_odd, is_vowel, overtime, test_config
 from src.examples.c_decisions.decisions import get_and_result
+from src.examples.c_decisions.decisions import get_letter_grade
 
 class Test_Config(unittest.TestCase):
 
@@ -42,3 +43,16 @@ class Test_Config(unittest.TestCase):
     def test_if_overtime(self):
         self.assertEqual(False, overtime(30))
         self.assertEqual(True, overtime(50))
+    
+    
+def test_get_letter_grade(self):
+    self.assertEqual(get_letter_grade(95),"A")
+    self.assertEqual(get_letter_grade(100),"A")
+    self.assertEqual(get_letter_grade(85),"B")
+    self.assertEqual(get_letter_grade(80),"B")
+    self.assertEqual(get_letter_grade(75),"C")
+    self.assertEqual(get_letter_grade(70),"C")
+    self.assertEqual(get_letter_grade(65),"D")
+    self.assertEqual(get_letter_grade(50),"F")
+    self.assertEqual(get_letter_grade(105),"Invalid Grade")
+    
