@@ -13,7 +13,7 @@ import strings
 #strings.loop_string_w_while("python")
 
 #strings.loop_string_ww_for("python")
-#strings.loop_string_w_special_for("python")
+strings.loop_string_w_special_for("python")
 
 lang = "python"
 print (lang[2])
@@ -26,3 +26,5 @@ lang = lang.replace ("t", "T")
  
 '''
 print (lang)
+
+strings.use_repetition_operator(10)
