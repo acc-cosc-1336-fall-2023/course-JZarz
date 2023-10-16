@@ -36,3 +36,24 @@ def display_rev_list_w_for_range():
     list = [5,10,20]
     for i in range(len(list), 0, -1):
         print (list[i-1])
+        
+def get_list_total_while(list):
+    index = 0
+    sum = 0
+
+    while(index < len(list)):
+        sum += list[index]
+        index += 1
+    return sum
+
+def get_list_total_for(list):
+
+    sum = 0 
+    for i in range (0, len(list)):
+        sum += list[i]
+
+    return sum
+
+def list_ref_param(list):
+    list[0] = 0
+
