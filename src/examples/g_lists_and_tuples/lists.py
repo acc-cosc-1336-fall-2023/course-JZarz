@@ -57,3 +57,8 @@ def get_list_total_for(list):
 def list_ref_param(list):
     list[0] = 0
 
+def get_list_return_value(list):
+    print(list)
+    list[0] = 0
+
+    return list

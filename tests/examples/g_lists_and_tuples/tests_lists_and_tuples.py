@@ -20,3 +20,10 @@ class Test_Config(unittest.TestCase):
         list = [5, 10, 20]
         list_ref_param(list)
         self.assertEqual(list, [0,10,20])
+
+    def test_list_return_value(self):
+        list = [5,10,20]
+        print("before", id(list))
+        get_list_return_value(list)
+        print("after", id(list))
+        self.assertEqual(list,[0,10,20])
