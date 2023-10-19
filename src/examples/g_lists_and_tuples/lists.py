@@ -62,3 +62,18 @@ def get_list_return_value(list):
     list[0] = 0
 
     return list
+
+def search_for_item_in_list(item, list):
+    return item in list
+
+def get_multiplication_table(max_value):
+    table = []
+    for r in range(1, max_value +1):
+        row = []
+
+        for c in range (1, max_value =1):
+            row.append(r * c)
+
+        table.append(row)
+    return table
+
