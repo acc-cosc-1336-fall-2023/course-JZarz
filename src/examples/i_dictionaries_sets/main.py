@@ -1,4 +1,5 @@
 import dictionaries
+import sets
 #phonebook = {'chris': '555-1111', 'katie':'555-2222', 'joanna': '555-3333'}
 
 #print(phonebook['chris'])
@@ -42,9 +43,32 @@ phonebook ={}
 
 #print(phonebook)
 
-phone_book = {'katie': '555-5555', 'katie': '555-6666'}#updates to last value
-print(phone_book)
+#phone_book = {'katie': '555-5555', 'katie': '555-6666'}#updates to last value
+#print(phone_book)
 
-phone_book = {'katie': '555-5555', 'katie_s': '555-6666'}#two separate ppl named katie must have diff keys
-print(phone_book)
+#phone_book = {'katie': '555-5555', 'katie_s': '555-6666'}#two separate ppl named katie must have diff keys
+#print(phone_book)
 
+#phonebook = {}
+#print('add friend\n')
+#dictionaries.add_friend_phonebook('chris', '555-5555', phonebook)
+
+#for name, value in phonebook.items():
+#    print(name, value)
+
+#print('\n delete chtis \n')
+#dictionaries.delete_friend_phonebook('chris', phonebook)
+#for name,value in phonebook.items():
+#    print(name,value)
+
+#myset = set('abc')
+#print(myset)
+#myset.add("d")
+#print(myset)
+#sets arent a ordered list will spit out randomly
+#for item in myset:
+#    print(item)
+
+list1 = list()
+
+print (list1)
