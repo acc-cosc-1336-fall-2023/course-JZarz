@@ -83,3 +83,25 @@ def read_sales_data(file_name):
     print('.........')
     print(f'{total_sales:.2f}')
     in_file.close()
+
+def write_field_data(file_name,file_mode):
+    out_file = open(file_name, file_mode)
+
+    user_choice = 'y'
+    while (user_choice.upper() == 'Y'):
+
+        name = input("enter name: ")
+        dept_id = input('enter dept id: ')
+        lang = input('enter programming language: ')
+
+        out_file.write(name + ',' + dept_id + ',' + lang + '\n')
+        user_choice = input('enter y to continue..')
+
+    out_file.close()
+
+def read_field_data(file_name):
+    in_file = open(file_name,'r')
+    for line in in_file:
+        fields = line.rstrip('\n').split(',')
+        print(fields)
+    in_file.close()
