@@ -19,9 +19,23 @@ print(account.get_balance())
 amount = int(input("enter deposit amount: "))
 account.withdraw(amount)
 print(account.get_balance())
-'''
 
 account = bank_account.BankAccount(50)
 my_atm = atm.ATM(account)
 
 menu.run_menu(my_atm)
+'''
+
+list_account = []
+
+account = bank_account.BankAccount(50)
+list_account.append(account)
+
+account = bank_account.BankAccount(50)
+list_account.append(account)
+
+account = bank_account.BankAccount(50)
+list_account.append(account)
+
+for account in list_account:
+    print (account)
